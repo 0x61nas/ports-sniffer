@@ -1,13 +1,13 @@
 [package]
 name = "ports-sniffer"
-version = "0.0.2"
+version = "0.0.3"
 edition = "2021"
 authors = ["Anas Elgarhy <anas.elgarhy.dev@gmail.com>"]
 description = "A simple port sniffer(scanner) implementation with 🦀"
 license = "MIT"
 include = [
     "src/**/*.rs",
-    "Carbon.toml",
+    "Cargo.toml",
     "LICENSE",
     "README.md",
 ]
@@ -19,9 +19,10 @@ keywords = [
 repository = "https://github.com/anas-elgarhy/ports-sniffer"
 homepage = "https://github.com/anas-elgarhy/ports-sniffer"
 
+# See https://crates.io/category_slugs for more categories
 categories = [
-    "Command line utilities",
-    "Network programming"
+    "command-line-utilities",
+    "network-programming"
 ]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
