@@ -1,5 +1,5 @@
 [package]
-name = "port-sniffer"
+name = "ports-sniffer"
 version = "0.0.1"
 edition = "2021"
 authors = ["Anas Elgarhy <anas.elgarhy.dev@gmail.com>"]
@@ -16,8 +16,8 @@ keywords = [
     "scanner",
     "ports-sniffer"
 ]
-repository = "https://github.com/anas-elgarhy/port-sniffer"
-homepage = "https://github.com/anas-elgarhy/port-sniffer"
+repository = "https://github.com/anas-elgarhy/ports-sniffer"
+homepage = "https://github.com/anas-elgarhy/ports-sniffer"
 
 categories = [
     "Command line utilities",

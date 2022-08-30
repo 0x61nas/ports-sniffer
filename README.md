@@ -11,16 +11,16 @@
 ### Usage
 
 ```bash
-port-sniffer <ip> [-t <threads>]
+ports-sniffer <ip> [-t <threads>]
 ```
 
 ### Examples
 
 ```bash
-port-sniffer 192.168.1.1
+ports-sniffer 192.168.1.1
 ```
 ```bash
-port-sniffer 192.168.1.1 -t 1000
+ports-sniffer 192.168.1.1 -t 1000
 ```
 
 
