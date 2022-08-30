@@ -1,0 +1,3 @@
+[submodule "archpackge/ports-sniffer"]
+	path = archpackge/ports-sniffer
+	url = ssh://aur@aur.archlinux.org/ports-sniffer.git
