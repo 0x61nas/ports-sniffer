@@ -5,7 +5,24 @@ edition = "2021"
 authors = ["Anas Elgarhy <anas.elgarhy.dev@gmail.com>"]
 description = "A simple port sniffer(scanner) implementation with 🦀"
 license = "MIT"
-keywords = ["port", "scanner", "sniffer"]
+include = [
+    "src/**/*.rs",
+    "Carbon.toml",
+    "LICENSE",
+    "README.md",
+]
+keywords = [
+    "ports-scanner",
+    "scanner",
+    "ports-sniffer"
+]
+repository = "https://github.com/anas-elgarhy/port-sniffer"
+homepage = "https://github.com/anas-elgarhy/port-sniffer"
+
+categories = [
+    "Command line utilities",
+    "Network programming"
+]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
