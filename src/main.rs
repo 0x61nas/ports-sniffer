@@ -35,7 +35,7 @@ fn main() {
         out.push(p);
     }
 
-    println!("---------");
+    println!("\n\nPorts open:\n");
 
     out.sort();
     for p in out {
