@@ -35,10 +35,14 @@ impl Arguments {
         } else {
             let flag = args[1].clone();
             if flag == "-h" || flag == "--help" {
-                println!("Usage: protsniff <ip> [-t <threads>]\n\
+                println!("Usage: ports-sniffer <ip> [-t <threads>]\n\
                     -h, --help\t\tShow this help message\n\
+                    -v, --version\t\tShow version\n\
                     -t, --threads\t\tSet the number of threads to use\n");
-                Err("help")
+                Err("info")
+            }else if flag == "-v" || flag == "--version" {
+                println!("ports-sniffer version 0.0.2");
+                Err("info")
             } else {
                 Err("invalid argument")
             }

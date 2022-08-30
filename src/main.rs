@@ -12,7 +12,7 @@ const MAX_PORT: u16 = 65535;
 fn main() {
     let args: Vec<String> = env::args().collect(); // collect args
     let args = Arguments::new(&args).unwrap_or_else(|err| {
-        if err.contains("help") {
+        if err.contains("info") {
             std::process::exit(0);
         } else {
             eprintln!("Problem parsing arguments: {}", err);
