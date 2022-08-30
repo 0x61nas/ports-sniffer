@@ -1,5 +1,19 @@
 ## A simple port sniffer(scanner) implementation with 🦀
 
+
+[![crates.io](https://img.shields.io/crates/v/ports-sniffer?style=for-the-badge)](https://crates.io/crates/ports-sniffer)
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/3e0d24aa2c1441e484622b8540193cdf)](https://app.codacy.com/gh/anas-elgarhy/ports-sniffer?utm_source=github.com&utm_medium=referral&utm_content=Anas-Elgarhy/cmus-rpc&utm_campaign=Badge_Grade_Settings)
+[![CodeFactor](https://www.codefactor.io/repository/github/anas-elgarhy/ports-sniffer/badge)](https://www.codefactor.io/repository/github/anas-elgarhy/cmus-rpc)
+
+## Install
+
+- from crates.io
+    ```bash
+    crago install ports-sniffer 
+    ```
+- From aur: `yay -S ports-sniffer`
+
 ### Arguments
 
 | Argument            | Description                          |
