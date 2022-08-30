@@ -18,8 +18,8 @@
 
 | Argument            | Description                          |
 |---------------------|--------------------------------------|
-| `-h`                | Show help                            |
-| `-v`                | Show version                         |
+| `-h` or `--help`    | Show help                            |
+| `-v` or `--version` | Show version                         |
 | `-t` or `--threads` | Set number of threads (4 by default) |
 
 ### Usage

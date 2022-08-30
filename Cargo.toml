@@ -1,6 +1,6 @@
 [package]
 name = "ports-sniffer"
-version = "0.0.3"
+version = "0.0.4"
 edition = "2021"
 authors = ["Anas Elgarhy <anas.elgarhy.dev@gmail.com>"]
 description = "A simple port sniffer(scanner) implementation with 🦀"

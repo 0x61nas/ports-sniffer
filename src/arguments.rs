@@ -41,7 +41,7 @@ impl Arguments {
                     -t, --threads\t\tSet the number of threads to use\n");
                 Err("info")
             }else if flag == "-v" || flag == "--version" {
-                println!("ports-sniffer version 0.0.2");
+                println!("ports-sniffer version 0.0.4");
                 Err("info")
             } else {
                 Err("invalid argument")
