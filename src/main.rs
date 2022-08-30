@@ -1,11 +1,11 @@
 mod arguments;
 
+use crate::arguments::Arguments;
 use std::env;
+use std::io::Write;
+use std::net::{IpAddr, TcpStream};
 use std::sync::mpsc;
 use std::thread;
-use std::net::{IpAddr, TcpStream};
-use std::io::Write;
-use crate::arguments::Arguments;
 
 const MAX_PORT: u16 = 65535;
 
@@ -43,10 +43,7 @@ fn main() {
     }
 }
 
-fn scan(tx: mpsc::Sender<u16>,
-        thread_id: u16,
-        ip: IpAddr,
-        threads_num: u16) {
+fn scan(tx: mpsc::Sender<u16>, thread_id: u16, ip: IpAddr, threads_num: u16) {
     let mut port = thread_id + 1;
 
     loop {
@@ -55,8 +52,8 @@ fn scan(tx: mpsc::Sender<u16>,
                 print!(".");
                 std::io::stdout().flush().unwrap();
                 tx.send(port).unwrap();
-            },
-            Err(_) => {},
+            }
+            Err(_) => {}
         }
 
         if (MAX_PORT - port) <= threads_num {
