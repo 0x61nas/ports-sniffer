@@ -1,6 +1,6 @@
 [package]
 name = "ports-sniffer"
-version = "0.0.4"
+version = "0.1.0"
 edition = "2021"
 authors = ["Anas Elgarhy <anas.elgarhy.dev@gmail.com>"]
 description = "A simple port sniffer(scanner) implementation with 🦀"
@@ -28,3 +28,5 @@ categories = [
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
+colored = "2.0.0"
+local-ip-address = "0.4.8"

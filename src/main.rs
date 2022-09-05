@@ -6,6 +6,7 @@ use std::io::Write;
 use std::net::{IpAddr, TcpStream};
 use std::sync::mpsc;
 use std::thread;
+use colored::Colorize;
 
 const MAX_PORT: u16 = 65535;
 
@@ -19,6 +20,8 @@ fn main() {
             std::process::exit(1);
         }
     });
+
+    println!("\t\t{}", "Starting scan...".green().bold().underline());
 
     let (tx, rx) = mpsc::channel();
 
@@ -35,11 +38,11 @@ fn main() {
         out.push(p);
     }
 
-    println!("\n\nPorts open:\n");
+    println!("{}", "\nPorts open:".black().on_white());
 
     out.sort();
     for p in out {
-        println!("{} is open", p);
+        println!("{}", p.to_string().white().on_red());
     }
 }
 
@@ -49,7 +52,7 @@ fn scan(tx: mpsc::Sender<u16>, thread_id: u16, ip: IpAddr, threads_num: u16) {
     loop {
         match TcpStream::connect((ip, port)) {
             Ok(_) => {
-                print!(".");
+                print!("{}", ".".white().on_bright_blue().bold());
                 std::io::stdout().flush().unwrap();
                 tx.send(port).unwrap();
             }
