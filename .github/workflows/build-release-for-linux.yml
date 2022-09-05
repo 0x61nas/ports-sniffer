@@ -1,0 +1,24 @@
+name: Rust
+
+on:
+  release:
+    types:
+      - published
+
+env:
+  CARGO_TERM_COLOR: always
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --release
+    - name: Upload
+    - uses: actions/upload-artifact@v3
+      with:
+       name: Linux
+       path: |
+        target/release/ports-sniffer
