@@ -17,8 +17,7 @@ jobs:
     - name: Build
       run: cargo build --release
     - name: Upload
-    - uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v3
       with:
         name: Linux
         path: target/release/ports-sniffer
-      run: echo "Upload"
