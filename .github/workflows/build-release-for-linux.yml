@@ -19,6 +19,6 @@ jobs:
     - name: Upload
     - uses: actions/upload-artifact@v3
       with:
-       name: Linux
-       path: |
-        target/release/ports-sniffer
+        name: Linux
+        path: target/release/ports-sniffer
+      run: echo "Upload"
