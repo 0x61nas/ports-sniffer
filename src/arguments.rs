@@ -41,7 +41,7 @@ impl Arguments {
                 );
                 return Err("info".to_string());
             } else if flag == "-v" || flag == "--version" {
-                println!("ports-sniffer version 0.1.2");
+                println!("ports-sniffer version 0.1.3");
                 return Err("info".to_string());
             } else {
                 return Err("invalid flag".to_string());
