@@ -25,13 +25,16 @@
 ### Usage
 
 ```bash
-ports-sniffer <ip> [-t <threads>]
+ports-sniffer [ip] [-t <threads>]
 ```
 
 ### Examples
+```bash
+ports-sniffer # scan localhost with 4 threads
+```
 
 ```bash
-ports-sniffer 192.168.1.1
+ports-sniffer 192.168.1.1 # scan the given ip with 4 threads
 ```
 ```bash
 ports-sniffer 192.168.1.1 -t 1000
