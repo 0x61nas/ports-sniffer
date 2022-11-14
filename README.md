@@ -10,7 +10,7 @@
 
 - from crates.io
     ```bash
-    crago install ports-sniffer 
+    cargo install ports-sniffer 
     ```
 - From aur: `yay -S ports-sniffer`
 
