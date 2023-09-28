@@ -29,4 +29,4 @@ categories = [
 
 [dependencies]
 colored = "2.0.0"
-local-ip-address = "0.5.1"
+local-ip-address = "0.5.6"
