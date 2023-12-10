@@ -28,5 +28,5 @@ categories = [
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [dependencies]
-colored = "2.0.0"
+colored = "2.1.0"
 local-ip-address = "0.5.1"
